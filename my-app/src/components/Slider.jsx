@@ -57,7 +57,7 @@ export default function Slider() {
 
   return (
     <section className="pywebp bg-[#f6f7f8] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 pb-7">
         <div className="text-center mb-12">
           <p className="text-[#FACC15] font-bold tracking-widest text-xs uppercase mb-2">
             Gallery
