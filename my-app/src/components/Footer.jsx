@@ -1,4 +1,4 @@
-import logo3 from "../assets/logo3.png";
+import logo3 from "../assets/logo3.webp";
 export default function Footer() {
   const quickLinks = ["Home", "About", "Products", "Contact"];
   const productLinks = [

@@ -1,9 +1,9 @@
-import tmt from "../assets/tmt.png";
-import angles from "../assets/angles.png";
-import pipes from "../assets/pipes.png";
-import sheets from "../assets/sheets.png";
-import beams from "../assets/beams.png";
-import hardware from "../assets/hardware.png";
+import tmt from "../assets/tmt.webp";
+import angles from "../assets/angles.webp";
+import pipes from "../assets/pipes.webp";
+import sheets from "../assets/sheets.webp";
+import beams from "../assets/beams.webp";
+import hardware from "../assets/hardware.webp";
 const products = [
   {
     title: "TMT Bars",

@@ -1,8 +1,8 @@
-import slide1 from "../assets/slide1.png";
-import slide2 from "../assets/slide2.png";
-import slide3 from "../assets/slide3.png";
-import slide4 from "../assets/slide4.png";
-import slide5 from "../assets/slide5.png";
+import slide1 from "../assets/slide1.webp";
+import slide2 from "../assets/slide2.webp";
+import slide3 from "../assets/slide3.webp";
+import slide4 from "../assets/slide4.webp";
+import slide5 from "../assets/slide5.webp";
 import { useState, useEffect, useRef } from "react";
 
 const slides = [
@@ -56,7 +56,7 @@ export default function Slider() {
   };
 
   return (
-    <section className="py-14 bg-[#f6f7f8] overflow-hidden">
+    <section className="pywebp bg-[#f6f7f8] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <p className="text-[#FACC15] font-bold tracking-widest text-xs uppercase mb-2">

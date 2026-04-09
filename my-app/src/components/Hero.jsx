@@ -1,12 +1,12 @@
-import steel1 from "../assets/steel1.png";
-import steel2 from "../assets/steel2.jpg";
-import steel3 from "../assets/steel3.png";
-import steel4 from "../assets/steel4.png";
-import steel5 from "../assets/steel5.png";
-import steel6 from "../assets/steel6.png";
-import steel7 from "../assets/steel7.png";
-import steel8 from "../assets/steel8.png";
-import steel9 from "../assets/steel9.png";
+import steel1 from "../assets/steel1.webp";
+import steel2 from "../assets/steel2.webp";
+import steel3 from "../assets/steel3.webp";
+import steel4 from "../assets/steel4.webp";
+import steel5 from "../assets/steel5.webp";
+import steel6 from "../assets/steel6.webp";
+import steel7 from "../assets/steel7.webp";
+import steel8 from "../assets/steel8.webp";
+import steel9 from "../assets/steel9.webp";
 
 
 function ImgBox({ label, src, className = "", tint = "gray" }) {
