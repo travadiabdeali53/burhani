@@ -44,10 +44,10 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, [isHome]);
   useEffect(() => {
-  if (location.pathname !== "/") {
-    setActiveSection(""); // reset when leaving homepage
-  }
-}, [location.pathname]);
+    if (location.pathname !== "/") {
+      setActiveSection(""); // reset when leaving homepage
+    }
+  }, [location.pathname]);
 
   // ── Track scroll position ──────────────────────────────────────────────────
   useEffect(() => {
@@ -107,9 +107,17 @@ export default function Navbar() {
       return;
     }
 
-    // ✅ HANDLE ROUTE LINKS (THIS WAS MISSING)
+    // ✅ HANDLE ROUTE LINKS
+    if (link.to === "/" && location.pathname === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      setActiveSection("");
+      return;
+    }
+
     navigate(link.to);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // ── Navbar background logic ───────────────────────────────────────────────
@@ -130,7 +138,6 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center shrink-0"
           aria-label="Burhani Steel & Hardware — Home"
         >
@@ -146,10 +153,10 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 lg:gap-10">
           {NAV_LINKS.map((link) => {
             const active =
-  (link.type === "hash" && activeSection === "contact") ||
-  (link.type === "route" &&
-    location.pathname === link.to &&
-    activeSection !== "contact");
+              (link.type === "hash" && activeSection === "contact") ||
+              (link.type === "route" &&
+                location.pathname === link.to &&
+                activeSection !== "contact");
             return (
               <li key={link.label}>
                 {link.type === "hash" ? (
@@ -240,10 +247,10 @@ export default function Navbar() {
         >
           {NAV_LINKS.map((link) => {
             const active =
-  (link.type === "hash" && activeSection === "contact") ||
-  (link.type === "route" &&
-    location.pathname === link.to &&
-    activeSection !== "contact");
+              (link.type === "hash" && activeSection === "contact") ||
+              (link.type === "route" &&
+                location.pathname === link.to &&
+                activeSection !== "contact");
             return (
               <button
                 key={link.label}

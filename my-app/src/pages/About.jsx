@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Animate from "../components/Animate";
 import Footer from "../components/Footer";
 
@@ -221,6 +222,7 @@ function LogoCard({ name, full, link = "#", logo, delay = "" }) {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function About() {
+
   return (
     <div className="bg-white font-['Poppins',sans-serif]">
       {/* ══════════════════════════
@@ -522,7 +524,7 @@ export default function About() {
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {primaryBrands.map((b, i) => (
-              <LogoCard key={b.name} {...b} delay={`delay-[${i * 80}ms]`} />
+              <LogoCard key={b.name} {...b} />
             ))}
           </div>
 
@@ -559,7 +561,7 @@ export default function About() {
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {secondaryBrands.map((b, i) => (
-              <LogoCard key={b.name} {...b} delay={`delay-[${i * 80}ms]`} />
+              <LogoCard key={b.name} {...b} />
             ))}
           </div>
         </div>

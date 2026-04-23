@@ -8,9 +8,21 @@ import ProductPage from "./pages/ProductPage";
 // ── Scroll to top on every route change ──────────────────────────────────────
 function ScrollToTop() {
   const { pathname } = useLocation();
+
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // Stop browser from restoring old scroll position
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    // Instantly jump to top
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
   }, [pathname]);
+
   return null;
 }
 

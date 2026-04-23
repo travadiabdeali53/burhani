@@ -244,9 +244,7 @@ export default function ProductPage() {
     // 👉 add your 14 products here once
   };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [current]);
+
 
   return (
     <div className="bg-white font-['Poppins']">
