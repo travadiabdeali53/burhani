@@ -153,7 +153,7 @@ export default function Hero() {
               <div className="grid grid-cols-3 gap-2.5">
                 <ImgBox label="Steel Sheets & Plates" src={steel4} loading="lazy" link="/products/hrsheets"  className="" />
                 <ImgBox label="Channels & Beams" src={steel5} loading="lazy" link="/products/channelsbeams" className="flex-1" />
-                <ImgBox label="Fencing Materials" src={steel6} loading="lazy" className="h-20" />
+                <ImgBox label="Fencing Materials" src={steel6} loading="lazy" link="/products/fencing" className="h-20" />
               </div>
 
               {/* Row 4: 2 unequal */}
