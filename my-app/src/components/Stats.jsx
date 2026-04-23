@@ -109,8 +109,8 @@ export default function Stats() {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-4 bg-white/5 border border-white/10 rounded-full px-8 py-3">
             <div className="w-2 h-2 bg-[#FACC15] rounded-full animate-pulse" />
-            <p className="text-white/70 text-sm font-medium">
-              ISI Certified · Quality Tested · On-Time Delivery · Trusted by 5000+ Clients
+            <p className="text-white/80 text-sm font-medium">
+              Burhani Steel & Hardware, also known as Gujarat Steel & Hardware — A Trusted Name in Steel Supply
             </p>
             <div className="w-2 h-2 bg-[#FACC15] rounded-full animate-pulse" />
           </div>

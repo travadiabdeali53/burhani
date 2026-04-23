@@ -109,6 +109,12 @@ export default function Footer() {
               >
                 +91 9429647672
               </a>
+              <a
+                href="tel:+919033772756"
+                className="text-white/60 hover:text-[#FACC15] text-sm transition-colors"
+              >
+                +91 9033772756
+              </a>
             </li>
             <li className="flex gap-3 items-center">
               <span className="text-[#FACC15] shrink-0">
@@ -194,7 +200,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <img src={logo3} alt="Burhani Steel" className="h-6 w-auto" />
+          <img src={logo3} alt="Burhani Steel" loading="lazy" className="h-6 w-auto" />
           <p className="text-white/40 text-xs">
             © {new Date().getFullYear()} Burhani Steel & Hardware. All rights
             reserved.

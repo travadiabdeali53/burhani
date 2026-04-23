@@ -8,40 +8,47 @@ import steel7 from "../assets/steel7.webp";
 import steel8 from "../assets/steel8.webp";
 import steel9 from "../assets/steel9.webp";
 
+import { Link } from "react-router-dom";
 
-function ImgBox({ label, src, className = "", tint = "gray" }) {
+function ImgBox({ label, src, className = "", tint = "gray", link }) {
   const bg =
     tint === "yellow"
       ? "bg-[#FACC15]/15 border-[#FACC15]/30"
       : tint === "dark"
-        ? "bg-[#0B1F3A]/10 border-[#0B1F3A]/20"
-        : "bg-gray-200 border-gray-300";
+      ? "bg-[#0B1F3A]/10 border-[#0B1F3A]/20"
+      : "bg-gray-200 border-gray-300";
 
   return (
-    <div
-      className={`relative border-2 rounded-xl overflow-hidden ${bg} ${className}`}
-    >
-      {/* IMAGE */}
-      <img src={src} alt={label} className="w-full h-full object-cover" />
+    <Link to={link || "#"}>
+      <div
+        className={`relative border-2 rounded-xl overflow-hidden ${bg} ${className} cursor-pointer group`}
+      >
+        {/* IMAGE */}
+        <img
+          src={src}
+          alt={label}
+          loading="lazy"
+          className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        />
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/20"></div>
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
 
-      {/* LABEL */}
-      {label && (
-        <span className="absolute bottom-2 left-2 text-white text-[10px] font-bold">
-          {label}
-        </span>
-      )}
-    </div>
+        {/* LABEL */}
+        {label && (
+          <span className="absolute bottom-2 left-2 text-white text-[10px] font-bold">
+            {label}
+          </span>
+        )}
+      </div>
+    </Link>
   );
 }
-
 export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-white pt-16 sm:pt-24  relative overflow-hidden"
+      className="bg-white pt-10 relative overflow-hidden"
     >
       {/* Grid background */}
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
@@ -95,12 +102,13 @@ export default function Hero() {
 
             {/* Sub brand name */}
             <h2 className="text-xs sm:text-sm lg:text-base font-bold text-[#FACC15] tracking-[0.18em] uppercase mt-5 mb-3">
-              Burhani Steel & Hardware
+              Burhani Steel & Hardware <br></br>
+              Gujarat Steel & Hardware
             </h2>
 
             {/* Description */}
             <p className="text-[#0B1F3A]/55 text-sm sm:text-[15px] leading-relaxed max-w-xs sm:max-w-sm lg:max-w-md mb-7 font-medium">
-              Ahmedabad's most trusted source for premium steel. We supply TMT
+              Surendranagar's most trusted source for premium steel. We supply TMT
               bars, angles, pipes, sheets and all structural steel needs for
               construction & industrial projects.
             </p>
@@ -133,19 +141,19 @@ export default function Hero() {
             {/* ── MOBILE (< lg): stacked responsive grid ── */}
             <div className="lg:hidden flex flex-col gap-2.5">
               {/* Row 1: 1 wide image */}
-              <ImgBox label="TMT Bars" src={steel1} className="flex-1" />
+              <ImgBox label="TMT Bars" src={steel1} loading="lazy" link="/products/tmtbars" className="flex-1" />
 
               {/* Row 2: 2 equal */}
               <div className="grid grid-cols-2 gap-2.5">
-                <ImgBox label="Steel Angles" src={steel2} className="flex-1" />
-                <ImgBox label="MS Pipes" src={steel3} className="flex-1" />
+                <ImgBox label="Steel Angles" src={steel2} loading="lazy" link="/products/steelangles" className="flex-1" />
+                <ImgBox label="MS Pipes" src={steel3} loading="lazy" link="/products/mspipes" className="flex-1" />
               </div>
 
               {/* Row 3: 3 small */}
               <div className="grid grid-cols-3 gap-2.5">
-                <ImgBox label="Steel Sheets & Plates" src={steel4} className="" />
-                <ImgBox label="Channels & Beams" src={steel5} className="flex-1" />
-                <ImgBox label="GI / HR Coils" src={steel6} className="h-20" />
+                <ImgBox label="Steel Sheets & Plates" src={steel4} loading="lazy" link="/products/hrsheets"  className="" />
+                <ImgBox label="Channels & Beams" src={steel5} loading="lazy" link="/products/channelsbeams" className="flex-1" />
+                <ImgBox label="Fencing Materials" src={steel6} loading="lazy" className="h-20" />
               </div>
 
               {/* Row 4: 2 unequal */}
@@ -153,8 +161,8 @@ export default function Hero() {
                 className="grid gap-2.5"
                 style={{ gridTemplateColumns: "2fr 1fr" }}
               >
-                <ImgBox label="Hardware & Fasteners" src={steel7} className="h-24 w-45" />
-                <ImgBox label="Wire Mesh & Rod" src={steel8} className="h-24" />
+                <ImgBox label="Chemicals" src={steel7} loading="lazy" link="/products/chemicals" className="h-24 w-45" />
+                <ImgBox label="Wire Mesh & Rod" src={steel8} loading="lazy" link="/products/wirerods" className="h-24" />
               </div>
             </div>
 
@@ -165,18 +173,18 @@ export default function Hero() {
                 className="grid gap-3"
                 style={{ gridTemplateColumns: "1.7fr 1fr" }}
               >
-                <ImgBox label="TMT Bars" src={steel1} className="h-60" />
+                <ImgBox label="TMT Bars" src={steel1} loading="lazy" link="/products/tmtbars" className="h-60" />
                 <div className="flex flex-col gap-2">
-                  <ImgBox label="Steel Angles" src={steel2} className="h-26" />
-                  <ImgBox label="MS Pipes" src={steel3} className="h-20" />
+                  <ImgBox label="Steel Angles" src={steel2} loading="lazy" link="/products/steelangles" className="h-26" />
+                  <ImgBox label="MS Pipes" src={steel3} loading="lazy" link="/products/mspipes" className="h-20" />
                 </div>
               </div>
 
               {/* Row 2: 3 equal */}
               <div className="grid grid-cols-3 gap-3">
-                <ImgBox label="Steel Sheets & Plates" src={steel4} className="flex-1" />
-                <ImgBox label="Channels & Beams" src={steel5} className="flex1" />
-                <ImgBox label="GI / HR Coils" src={steel6} className="flex-1" />
+                <ImgBox label="Steel Sheets & Plates" src={steel4} loading="lazy" link="/products/hrsheets"  className="flex-1" />
+                <ImgBox label="Channels & Beams" src={steel5} loading="lazy" link="/products/channelsbeams" className="flex1" />
+                <ImgBox label="Fencing Materials" src={steel6} loading="lazy" link="/products/fencing" className="flex-1" />
               </div>
 
               {/* Row 3: wide + small + small */}
@@ -184,9 +192,9 @@ export default function Hero() {
                 className="grid gap-3"
                 style={{ gridTemplateColumns: "1fr 1fr 1.2fr" }}
               >
-                <ImgBox label="Hardware & Fasteners" src={steel7} className="" />
-                <ImgBox label="Wire Mesh & Rod" src={steel8} className="flex-1" />
-                <ImgBox label="Warehouse / Yard " src={steel9} className="flex-1" />
+                <ImgBox label="Chemicals" src={steel7} loading="lazy" link="/products/chemicals" className="" />
+                <ImgBox label="Wire Mesh & Rod" src={steel8} loading="lazy" link="/products/wirerods" className="flex-1" />
+                <ImgBox label="Warehouse / Yard " src={steel9} loading="lazy" link="/products/roundbars" className="flex-1" />
               </div>
             </div>
 

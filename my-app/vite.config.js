@@ -3,5 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/burhani/' 
+  base: '/burhani/',
+
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 })
