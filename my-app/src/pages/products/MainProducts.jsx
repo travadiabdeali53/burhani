@@ -44,10 +44,15 @@ export default function MainProducts() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {mainProducts.map((p, i) => (
           <Link
-            key={i}
-            to={`/products/${p.slug}`}
-            className="group relative rounded-xl overflow-hidden border border-gray-200 hover:border-[#FACC15] shadow-sm hover:shadow-2xl transition-all duration-300"
-          >
+  key={i}
+  to={`/products/${p.slug}`}
+  onClick={() => {
+    sessionStorage.setItem(
+      "productsScrollPosition",
+      window.scrollY
+    );
+  }}
+>
             <div className="relative h-44 overflow-hidden">
               <img
                 src={p.img}

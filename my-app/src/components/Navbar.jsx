@@ -109,10 +109,7 @@ export default function Navbar() {
 
     // ✅ HANDLE ROUTE LINKS
     if (link.to === "/" && location.pathname === "/") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      window.scrollTo(0, 0);
       setActiveSection("");
       return;
     }

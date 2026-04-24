@@ -1,5 +1,6 @@
 import { useSearchParams, useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Animate from "../components/Animate";
 import Footer from "../components/Footer";
 
@@ -210,6 +211,28 @@ function ProductCard({ title, img, pdf, index }) {
 // ─── MAIN PAGE ─────────────────
 export default function ProductPage() {
   const { brand } = useParams();
+
+  const location = useLocation();
+
+useEffect(() => {
+  const savedPosition = sessionStorage.getItem(
+    "productsScrollPosition"
+  );
+
+  if (
+    location.pathname === "/products" &&
+    savedPosition
+  ) {
+    window.scrollTo({
+      top: Number(savedPosition),
+      behavior: "auto",
+    });
+
+    sessionStorage.removeItem(
+      "productsScrollPosition"
+    );
+  }
+}, [location.pathname]);
   const [searchParams] = useSearchParams();
 
   const queryBrand = searchParams.get("brand");
