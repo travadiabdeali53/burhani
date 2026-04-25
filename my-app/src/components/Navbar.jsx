@@ -1,4 +1,4 @@
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo4.webp";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -139,11 +139,11 @@ export default function Navbar() {
           aria-label="Burhani Steel & Hardware — Home"
         >
           <img
-            src={logo}
-            alt="Burhani Steel & Hardware"
-            loading="lazy"
-            className="h-10 sm:h-12 w-auto object-contain"
-          />
+  src={logo}
+  alt="Burhani Steel & Hardware"
+  loading="lazy"
+  className="h-10 sm:h-14 md:h-18 w-auto object-contain scale-110"
+ />
         </Link>
 
         {/* Desktop links */}

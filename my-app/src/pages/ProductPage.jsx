@@ -1,6 +1,6 @@
 import { useSearchParams, useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigationType } from "react-router-dom";
 import Animate from "../components/Animate";
 import Footer from "../components/Footer";
 
@@ -213,13 +213,23 @@ export default function ProductPage() {
   const { brand } = useParams();
 
   const location = useLocation();
+const navigationType = useNavigationType();
 
 useEffect(() => {
-  const savedPosition = sessionStorage.getItem(
+  const mainProductsScroll = sessionStorage.getItem(
     "productsScrollPosition"
   );
 
+  const homeScroll = sessionStorage.getItem(
+    "homeScrollPosition"
+  );
+
+  const savedPosition =
+    mainProductsScroll || homeScroll;
+
+  // Restore ONLY when browser back/forward is used
   if (
+    navigationType === "POP" &&
     location.pathname === "/products" &&
     savedPosition
   ) {
@@ -228,11 +238,19 @@ useEffect(() => {
       behavior: "auto",
     });
 
-    sessionStorage.removeItem(
-      "productsScrollPosition"
-    );
+    sessionStorage.removeItem("productsScrollPosition");
+    sessionStorage.removeItem("homeScrollPosition");
+    return;
   }
-}, [location.pathname]);
+
+  // Normal page open → always start from top
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "auto",
+  });
+
+}, [location.pathname, navigationType]);
   const [searchParams] = useSearchParams();
 
   const queryBrand = searchParams.get("brand");

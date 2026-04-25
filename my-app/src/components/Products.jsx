@@ -81,10 +81,16 @@ export default function Products() {
           {products.map((product, i) => {
             return (
               <Link
-                to={`/products/${product.slug}`}
-                state={{ category: product.title }}
-                key={i}
-              >
+  to={`/products/${product.slug}`}
+  state={{ category: product.title }}
+  key={i}
+  onClick={() => {
+    sessionStorage.setItem(
+      "homeScrollPosition",
+      window.scrollY
+    );
+  }}
+>
                 <div className="group border border-gray-100 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
