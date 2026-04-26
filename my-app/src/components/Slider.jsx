@@ -3,6 +3,9 @@ import slide2 from "../assets/slide2.webp";
 import slide3 from "../assets/slide3.webp";
 import slide4 from "../assets/slide4.webp";
 import slide5 from "../assets/slide5.webp";
+import slide6 from "../assets/slide6.webp";
+import slide7 from "../assets/slide7.webp";
+import slide8 from "../assets/slide8.webp";
 import welcome2 from "../assets/welcome2.webp";
 
 import { useState, useEffect, useRef } from "react";
@@ -15,10 +18,22 @@ const slides = [
     sub: "High Strenght And Contruction Resistance",
   },
   {
+    title: "Kamdhenu Steel",
+    img: slide6,
+    label: "Kamdhenu Steel",
+    sub: "Sampurna Surksha Ki Guarantee",
+  },
+  {
     title: "JSW Steel Limited",
     img: slide1,
     label: "JSW Steel Limited",
     sub: "Innovative Steel Solutions",
+  },
+  {
+    title: "Jindal Steel",
+    img: slide7,
+    label: "Jindal Steel",
+    sub: "The Steel of India",
   },
   {
     title: "SAIL Steel",
@@ -33,10 +48,10 @@ const slides = [
     sub: "Sustainable Steel Solutions",
   },
   {
-    title: "RINL Vizag Steel",
-    img: slide5,
-    label: "RINL Vizag Steel",
-    sub: "Efficient Steel Solutions",
+    title: "Fosroc Chemicals",
+    img: slide8,
+    label: "Fosroc Chemicals",
+    sub: "Constructive Solutions | Building Services",
   },
 ];
 
@@ -169,7 +184,7 @@ export default function Slider() {
             </h2>
 
             <p>
-              Established in 2005 in Surendranagar (Gujarat, India),{" "}
+              Established in 1994 in Surendranagar (Gujarat, India),{" "}
               <span className="font-semibold text-[#0B1F3A]">
                 Burhani Steel & Hardware
               </span>
