@@ -8,11 +8,19 @@ export default function StructuralSteel() {
   };
 
   return (
-    <>
+    <section className="bg-[#eeeeee] py-12">
       {/* DESCRIPTION */}
       <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          {data.description}
+        <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
+          <span className="font-bold text-black">Structural Steel</span> is a
+          versatile metal that is used in construction, industrial sheds,
+          fabrication and has many other applications. Produced in a large range
+          of products and dimensions for commercial or consumer use. Valued for
+          its strength, durability, and capability to withstand any natural
+          calamities like earthquake. Comparatively,{" "}
+          <span className="font-bold text-black">Structural Steel</span> gives
+          more strength to a building and thus reduces the overall steel
+          requirement.
         </p>
       </section>
 
@@ -216,18 +224,20 @@ export default function StructuralSteel() {
         </div>
       </section>
 
+      {/* Keep your remaining Beams / NPB / Channels sections same */}
+
       {/* IMAGES */}
       <section className="pb-12 max-w-6xl mx-auto px-4">
         <h3 className="font-bold mb-6">Structural Steel</h3>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
-            { img: steel2, title: "Vizag Steel (RINL)" },
+            { img: steel2, title: "Jindal Steel Ltd." },
             { img: steel1, title: "Sail Structural" },
           ].map((p, i) => (
             <div
               key={i}
-              className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+              className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
             >
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -247,6 +257,17 @@ export default function StructuralSteel() {
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+

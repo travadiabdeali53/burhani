@@ -51,11 +51,22 @@ export default function TMTBars() {
   return (
     <>
       {/* DESCRIPTION */}
-      <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          {data.description}
-        </p>
-      </section>
+<section className="py-12 max-w-6xl mx-auto px-4">
+  <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
+    <span className="font-bold text-black">TMT Bars</span> are the most essential
+    element in the growth of infrastructure in our country. They are used to
+    strengthen the entire building structure during any natural calamity like an
+    earthquake. It bonds perfectly with cement due to its rib pattern with the
+    higher AR value and ductility that particularly means more resilience to any
+    kind of load. <span className="font-bold text-black">TMT Bars</span> are
+    easily butt welded, lap welded and manual arc-welded without any
+    pre-heating, due to its low carbon content. The special corrosion-resistant
+    grades are used for coastal areas as well as moist land. The periphery of
+    <span className="font-bold text-black"> TMT Bars </span>
+    is hard while the core is comparatively soft which makes it ductile. Its
+    inherent microstructures of the soft-core make easily bendable.
+  </p>
+</section>
 
       {/* SIZE + WEIGHT TABLE */}
       <section className="pb-12 max-w-6xl mx-auto px-4">

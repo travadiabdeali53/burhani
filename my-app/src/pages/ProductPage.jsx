@@ -280,7 +280,7 @@ useEffect(() => {
     chequeredplates: ["Chequered", "Plates"],
     billet: ["Billet"],
     fencing: ["Fencing", "Materials"],
-    chemicals: ["Chemicals"],
+    chemicals: ["Chemicals &", "Solutions"],
     channelsbeams: ["Channel &", "Beams"],
     // 👉 add your 14 products here once
   };

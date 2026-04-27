@@ -1,4 +1,5 @@
 import beams from "@/assets/products/beams.webp";
+import structural_steel from "@/assets/products/structural_steel.webp";
 
 export default function Channel() {
   return (
@@ -47,29 +48,35 @@ export default function Channel() {
           <li>Columns, beams, and reinforcement structures</li>
         </ul>
       </section>
-
-      {/* IMAGE */}
+{/* IMAGES */}
       <section className="pb-12 max-w-6xl mx-auto px-4">
         <h3 className="font-bold mb-6">Channels & Beams</h3>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300">
-            
-            {/* IMAGE */}
-            <div className="overflow-hidden">
-              <img
-                src={beams}
-                alt="Channels and Beams"
-                loading="lazy"
-                className="w-full aspect-[4/3] object-cover transition duration-500 group-hover:scale-105"
-              />
-            </div>
+          {[
+            { img: structural_steel, title: "JSW Steel Ltd." },
+            { img: beams, title: "Sail Structurals" },
+          ].map((p, i) => (
+            <div
+              key={i}
+              className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+            >
+              {/* IMAGE */}
+              <div className="overflow-hidden">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  loading="lazy"
+                  className="w-full aspect-[4/3] object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
 
-            {/* TITLE */}
-            <p className="p-3 font-semibold text-center text-gray-800 group-hover:text-[#FACC15] transition">
-              MS Channels & Beams
-            </p>
-          </div>
+              {/* TITLE */}
+              <p className="p-3 font-semibold text-center text-gray-800 group-hover:text-[#FACC15] transition">
+                {p.title}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </>

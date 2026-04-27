@@ -215,7 +215,7 @@ export default function Billet() {
 
             {/* TITLE */}
             <p className="p-3 font-semibold text-center text-gray-800 group-hover:text-[#FACC15] transition">
-              Vizag Steel (RINL)
+              Jindal Steel Ltd.
             </p>
           </div>
         </div>

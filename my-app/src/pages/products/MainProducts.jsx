@@ -15,8 +15,6 @@ import beams from "../../assets/products/beams.webp";
 import chequered from "../../assets/products/chequered.webp";
 import billet from "../../assets/products/billet.webp";
 
-
-
 export default function MainProducts() {
   const mainProducts = [
     { title: "TMT Bars", img: tmt2, slug: "tmtbars" },
@@ -40,51 +38,71 @@ export default function MainProducts() {
   ];
 
   return (
-    <div className="py-12 px-4 max-w-7xl mx-auto">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+  <section className="py-14 px-4 md:px-6 bg-[#eeeeee]">
+    <div className="max-w-7xl mx-auto">
+      {/* Mobile = 1 product per row */}
+      {/* Tablet = 2 */}
+      {/* Desktop = 3 */}
+      {/* Large Desktop = 4 */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {mainProducts.map((p, i) => (
           <Link
-  key={i}
-  to={`/products/${p.slug}`}
-  onClick={() => {
-    sessionStorage.setItem(
-      "productsScrollPosition",
-      window.scrollY
-    );
-  }}
->
-            <div className="relative h-44 overflow-hidden">
-              <img
-                src={p.img}
-                alt={p.title}
-                loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-              />
+            key={i}
+            to={`/products/${p.slug}`}
+            className="group"
+            onClick={() => {
+              sessionStorage.setItem(
+                "productsScrollPosition",
+                window.scrollY
+              );
+            }}
+          >
+            <div className="bg-white border border-transparent hover:border-[#FACC15] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500">
 
-              <div className="absolute inset-0 bg-[#0B1F3A]/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span className="text-white font-semibold text-sm">
-                  View Products →
-                </span>
+              {/* Image Section */}
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-[#0B1F3A]/45 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <span className="text-white font-semibold text-sm tracking-wide">
+                    View Products →
+                  </span>
+                </div>
+              </div>
+
+              {/* Title Section */}
+              <div className="p-5 text-center">
+                <h3 className="font-bold text-lg text-[#0B1F3A] group-hover:text-[#FACC15] transition duration-300">
+                  {p.title}
+                </h3>
+
+                {/* Yellow thin underline on hover */}
+                <div className="mt-3 h-[2px] w-0 group-hover:w-full bg-[#FACC15] mx-auto transition-all duration-500"></div>
               </div>
             </div>
-
-            <div className="p-4 bg-white text-center">
-              <h3 className="font-bold text-[#0B1F3A] group-hover:text-[#FACC15] transition">
-                {p.title}
-              </h3>
-            </div>
-
-            <div className="h-0.5 w-0 group-hover:w-full bg-[#FACC15] transition-all duration-500" />
           </Link>
         ))}
       </div>
 
-      <div className="mt-10 text-center">
-        <div className="w-12 h-[2px] bg-[#FACC15] mx-auto mb-3"></div>
+      {/* Bottom Text */}
+      <div className="mt-14 text-center">
+        <div className="w-14 h-[2px] bg-[#FACC15] mx-auto mb-4"></div>
+
         <p className="text-[#0B1F3A] text-lg sm:text-xl font-semibold">
-          Steel Suppliers at <span className="text-[#FACC15]">Best Price</span>
+          Steel Suppliers at{" "}
+          <span className="text-[#FACC15]">
+            Best Price
+          </span>
         </p>
       </div>
     </div>
-  );
+  </section>
+);
 }

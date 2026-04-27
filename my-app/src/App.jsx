@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ProductPage from "./pages/ProductPage";
+import Contact from "./pages/Contact";
 
 // ── Scroll to top on every route change ──────────────────────────────────────
 function ScrollToTop() {
@@ -41,6 +42,7 @@ function Layout() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/products/:brand" element={<ProductPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </>

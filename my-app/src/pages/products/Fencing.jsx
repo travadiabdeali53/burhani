@@ -15,20 +15,20 @@ export default function Fencing() {
   ];
 
   return (
-    <>
+    <section className="bg-[#eeeeee] py-12">
       {/* ================= DESCRIPTION ================= */}
       <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
+        <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
           We supply high-quality <strong>Fencing Material</strong> suitable for
-          residential, commercial, agricultural, and industrial applications. Our
-          store offers <strong>all Types of Barber wire</strong>, including
+          residential, commercial, agricultural, and industrial applications.
+          Our store offers <strong>all Types of Barber wire</strong>, including
           durable and corrosion-resistant options designed for long-lasting
           performance. We proudly deal in premium quality barbed wire from{" "}
           <strong>Tata Bansal</strong>, ensuring strength, reliability, and
           superior protection.
         </p>
 
-        <p className="text-gray-700 leading-relaxed mt-4 text-justify">
+        <p className="text-gray-700 leading-relaxed mt-4 text-justify text-[15px] sm:text-base md:text-lg">
           Along with barbed wires, we also provide a wide range of fencing
           solutions such as chain link fencing, binding wires, and other related
           materials. Our products are widely trusted for their strength, easy
@@ -57,36 +57,36 @@ export default function Fencing() {
 
       {/* ================= IMAGES ================= */}
       <section className="pb-12 max-w-6xl mx-auto px-4">
-  <h3 className="font-bold mb-6">Fencing Materials</h3>
+        <h3 className="font-bold mb-6">Fencing Materials</h3>
 
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {[
-      { img: fencing, title: "Galvanized Wire Fencing" },
-      { img: fencing2, title: "Barbed Wire" },
-      { img: fencing3, title: "Chain Link Fencing" }, // NEW IMAGE
-    ].map((p, i) => (
-      <div
-        key={i}
-        className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
-      >
-        {/* IMAGE */}
-        <div className="overflow-hidden">
-          <img
-            src={p.img}
-            alt={p.title}
-            loading="lazy"
-            className="w-full aspect-[4/3] object-cover transition duration-500 group-hover:scale-105"
-          />
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[
+            { img: fencing, title: "Galvanized Wire Fencing" },
+            { img: fencing2, title: "Barbed Wire" },
+            { img: fencing3, title: "Chain Link Fencing" },
+          ].map((p, i) => (
+            <div
+              key={i}
+              className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+            >
+              {/* IMAGE */}
+              <div className="overflow-hidden">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  loading="lazy"
+                  className="w-full aspect-[4/3] object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              {/* TITLE */}
+              <p className="p-3 font-semibold text-center text-gray-800 group-hover:text-[#FACC15] transition">
+                {p.title}
+              </p>
+            </div>
+          ))}
         </div>
-
-        {/* TITLE */}
-        <p className="p-3 font-semibold text-center text-gray-800 group-hover:text-[#FACC15] transition">
-          {p.title}
-        </p>
-      </div>
-    ))}
-  </div>
-</section>
-    </>
+      </section>
+    </section>
   );
 }

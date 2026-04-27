@@ -25,22 +25,33 @@ export default function WireRods() {
 
     weights: [],
 
-    grades: ["Mild Steel Grades", "Medium Carbon Grades", "High Carbon Grades"],
+    grades: [
+      "Mild Steel Grades",
+      "Medium Carbon Grades",
+      "High Carbon Grades",
+    ],
 
     primary: [
       { title: "JSW Steel Ltd.", img: wire },
-      { title: "Vizag Steel (RINL)", img: wire2 },
+      { title: "Tata Bansal Wires", img: wire2 },
     ],
 
     secondary: [],
   };
 
   return (
-    <>
+    <section className="bg-[#eeeeee] py-12">
       {/* DESCRIPTION */}
       <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          {data.description}
+        <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
+          We are the leading{" "}
+          <span className="font-bold text-black">Wire Rod Supplier</span> of
+          Gujarat. Industries have much special application which requires the
+          precise chemical composition of the raw material. So, supplying{" "}
+          <span className="font-bold text-black">wire-rods</span> as leading
+          primary producers. These ensure the quality of the product. The{" "}
+          <span className="font-bold text-black">Wire Rod</span> is used for
+          the manufacturing of many products.
         </p>
       </section>
 
@@ -62,7 +73,10 @@ export default function WireRods() {
               </div>
 
               {data.sizes.map((s, i) => (
-                <div key={i} className="bg-[#2F2C6A] text-white p-3 border-l">
+                <div
+                  key={i}
+                  className="bg-[#2F2C6A] text-white p-3 border-l"
+                >
                   {s}
                 </div>
               ))}
@@ -75,7 +89,7 @@ export default function WireRods() {
       <section className="pb-12 max-w-6xl mx-auto px-4">
         <h3 className="font-bold mb-4">Grades</h3>
 
-        <ul className="space-y-2">
+        <ul className="space-y-2 text-[15px] sm:text-base text-gray-700">
           {data.grades.map((g, i) => (
             <li key={i}>• {g}</li>
           ))}
@@ -90,7 +104,7 @@ export default function WireRods() {
           {data.primary.map((p, i) => (
             <div
               key={i}
-              className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+              className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
             >
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -110,6 +124,7 @@ export default function WireRods() {
           ))}
         </div>
       </section>
+
       {/* SECONDARY */}
       {data.secondary.length > 0 && (
         <section className="pb-12 max-w-6xl mx-auto px-4">
@@ -119,7 +134,7 @@ export default function WireRods() {
             {data.secondary.map((p, i) => (
               <div
                 key={i}
-                className="rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+                className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
               >
                 <img
                   src={p.img}
@@ -133,6 +148,6 @@ export default function WireRods() {
           </div>
         </section>
       )}
-    </>
+    </section>
   );
 }

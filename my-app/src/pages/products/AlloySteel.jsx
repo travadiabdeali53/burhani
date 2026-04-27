@@ -1,19 +1,30 @@
 import alloy1 from "@/assets/products/alloy.webp";
-import alloy2 from "@/assets/products/pipes.webp";
+import alloy2 from "@/assets/products/pipes2.webp";
 
 export default function AlloySteel() {
   return (
-    <>
+    <section className="bg-[#fafafa] py-12">
       {/* DESCRIPTION */}
       <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          We supply <strong>Alloy Steel</strong> in the form of round bar and
-          wire rods coils. Property determines the quality of the product. We
-          provide UT (Ultrasonically Tested) OK material and VD
-          (Vacuum-Degassing) route material of various renowned brands. The
-          quality assurance system of brands we supply are equipped with modern
-          equipment. Highly skilled workforce constantly strives to get the best
-          of products by controlling the entire process at every vital point.
+        <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
+          We supply <span className="font-bold text-black">Alloy Steel</span> in
+          the form of <span className="font-bold text-black">round bar</span>{" "}
+          and
+          <span className="font-bold text-black"> wire rods coils</span>.
+          Property determines the quality of the product. We provide
+          <span className="font-bold text-black">
+            {" "}
+            UT (Ultrasonically Tested)
+          </span>{" "}
+          OK material and
+          <span className="font-bold text-black">
+            {" "}
+            VD (Vacuum-Degassing)
+          </span>{" "}
+          route material of various renowned brands. The quality assurance
+          system of brands we supply are equipped with modern equipment. Highly
+          skilled workforce constantly strives to get the best of products by
+          controlling the entire process at every vital point.
         </p>
       </section>
 
@@ -102,6 +113,7 @@ export default function AlloySteel() {
           </div>
         </div>
       </section>
+
       {/* IMAGES */}
       <section className="pb-12 max-w-6xl mx-auto px-4">
         <h3 className="font-bold mb-6">Alloy Steel</h3>
@@ -113,7 +125,7 @@ export default function AlloySteel() {
           ].map((p, i) => (
             <div
               key={i}
-              className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+              className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
             >
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -133,6 +145,6 @@ export default function AlloySteel() {
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 }

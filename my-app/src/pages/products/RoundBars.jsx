@@ -18,11 +18,16 @@ export default function RoundBars() {
   };
 
   return (
-    <>
+    <section className="bg-[#f4f4f4] py-12">
       {/* DESCRIPTION */}
       <section className="py-12 max-w-6xl mx-auto px-4">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          {data.description}
+        <p className="text-gray-700 leading-relaxed text-justify text-[15px] sm:text-base md:text-lg">
+          With many applications,{" "}
+          <span className="font-bold text-black">Round Bars</span> are the most
+          running industrial product. Available in more than 25 diameters
+          starting from 20 mm to 90mm. We supply{" "}
+          <span className="font-bold text-black">steel of high quality</span>
+          {" "}and precisely dimensional.
         </p>
       </section>
 
@@ -179,6 +184,7 @@ export default function RoundBars() {
           </div>
         </div>
       </section>
+
       {/* APPLICATIONS */}
       <section className="pb-12 max-w-6xl mx-auto px-4">
         <h3 className="font-bold mb-4">Applications</h3>
@@ -187,7 +193,9 @@ export default function RoundBars() {
           {data.applications.map((item, i) => (
             <div key={i} className="flex items-center gap-2">
               <span className="w-2 h-2 bg-[#2F2C6A] rounded-full"></span>
-              <p>{item}</p>
+              <p className="text-[15px] sm:text-base text-gray-700">
+                {item}
+              </p>
             </div>
           ))}
         </div>
@@ -199,12 +207,12 @@ export default function RoundBars() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
-            { img: round1, title: "Vizag Steel (RINL)" },
+            { img: round1, title: "Sail Steel Ltd." },
             { img: round2, title: "JSW SALEM" },
           ].map((p, i) => (
             <div
               key={i}
-              className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
+              className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300"
             >
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -224,6 +232,23 @@ export default function RoundBars() {
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      

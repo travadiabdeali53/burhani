@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: "Home", type: "route", to: "/" },
   { label: "About", type: "route", to: "/about" },
   { label: "Products", type: "route", to: "/products" },
-  { label: "Contact", type: "hash", to: "#contact" },
+  { label: "Contact", type: "route", to: "/contact" },
 ];
 
 export default function Navbar() {
@@ -139,11 +139,11 @@ export default function Navbar() {
           aria-label="Burhani Steel & Hardware — Home"
         >
           <img
-  src={logo}
-  alt="Burhani Steel & Hardware"
-  loading="lazy"
-  className="h-10 sm:h-14 md:h-18 w-auto object-contain scale-110"
- />
+            src={logo}
+            alt="Burhani Steel & Hardware"
+            loading="lazy"
+            className="h-10 sm:h-14 md:h-18 w-auto object-contain scale-110"
+          />
         </Link>
 
         {/* Desktop links */}
@@ -201,7 +201,7 @@ export default function Navbar() {
           {/* CTA button */}
           <li>
             <button
-              onClick={() => handleLinkClick({ type: "hash", to: "#contact" })}
+              onClick={() => handleLinkClick({ type: "route", to: "/contact" })}
               className="bg-[#0B1F3A] text-white px-5 py-2.5 rounded text-sm font-bold tracking-wide hover:bg-[#FACC15] hover:text-[#0B1F3A] transition-all duration-300"
             >
               Get Quote

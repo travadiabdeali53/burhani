@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.webp";
+
 export default function Footer() {
   const quickLinks = ["Home", "About", "Products", "Contact"];
   const productLinks = [
-    "TMT Bars",
-    "Steel Angles",
-    "MS Pipes",
-    "Steel Sheets",
-    "Channels & Beams",
-    "Hardware",
+    { name: "TMT Bars", slug: "tmtbars" },
+    { name: "Fencing Materials", slug: "fencing" },
+    { name: "Chemicals & Solutions", slug: "chemicals" },
+    { name: "Structural Steel", slug: "structuralsteel" },
+    { name: "Steel Angles", slug: "steelangles" },
+    { name: "MS Pipes & Tubes", slug: "mspipes" },
   ];
-
   return (
     <footer id="contact" className="bg-[#0B1F3A]">
       {/* Top Section */}
@@ -25,13 +26,13 @@ export default function Footer() {
           <ul className="space-y-3">
             {quickLinks.map((link) => (
               <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
+                <Link
+                  to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
                   className="text-white/60 hover:text-[#FACC15] text-sm font-medium transition-colors duration-200 flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-3 h-0.5 bg-[#FACC15] transition-all duration-200" />
                   {link}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -47,14 +48,14 @@ export default function Footer() {
           </div>
           <ul className="space-y-3">
             {productLinks.map((product) => (
-              <li key={product}>
-                <a
-                  href="#products"
+              <li key={product.slug}>
+                <Link
+                  to={`/products/${product.slug}`}
                   className="text-white/60 hover:text-[#FACC15] text-sm font-medium transition-colors duration-200 flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-3 h-0.5 bg-[#FACC15] transition-all duration-200" />
-                  {product}
-                </a>
+                  {product.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -93,8 +94,8 @@ export default function Footer() {
                 Surendranagar – 363001, Gujarat
               </p>
             </li>
-            <li className="flex gap-3 items-center">
-              <span className="text-[#FACC15] shrink-0">
+            <li className="flex gap-4 items-start">
+              <span className="text-[#FACC15] shrink-0 mt-2">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -103,18 +104,22 @@ export default function Footer() {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
               </span>
-              <a
-                href="tel:+919429647672"
-                className="text-white/60 hover:text-[#FACC15] text-sm transition-colors"
-              >
-                +91 9429647672
-              </a>
-              <a
-                href="tel:+919033772756"
-                className="text-white/60 hover:text-[#FACC15] text-sm transition-colors"
-              >
-                +91 9033772756
-              </a>
+
+              <div className="flex items-start gap-6 flex-wrap">
+                <a
+                  href="tel:+919429647672"
+                  className="text-[#FACC15] text-lg font-semibold border-b border-[#FACC15] pb-1 hover:text-white hover:border-white transition-all duration-300 leading-tight"
+                >
+                  +91 9429647672
+                </a>
+
+                <a
+                  href="tel:+919033772756"
+                  className="text-white/60 hover:text-[#FACC15] text-sm transition-colors leading-tight pt-2"
+                >
+                  +91 9033772756
+                </a>
+              </div>
             </li>
             <li className="flex gap-3 items-center">
               <span className="text-[#FACC15] shrink-0">
@@ -200,7 +205,12 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Burhani Steel" loading="lazy" className="h-6 w-auto" />
+          <img
+            src={logo}
+            alt="Burhani Steel"
+            loading="lazy"
+            className="h-6 w-auto"
+          />
           <p className="text-white/40 text-xs">
             © {new Date().getFullYear()} Burhani Steel & Hardware. All rights
             reserved.

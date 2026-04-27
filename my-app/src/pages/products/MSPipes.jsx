@@ -1,31 +1,38 @@
-import pipes from "@/assets/products/pipes.webp";
+import pipes from "@/assets/products/pipes2.webp";
 
 export default function MSPipes() {
   return (
-    <>
+    <section className="bg-[#eeeeee] py-12">
       {/* DESCRIPTION */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-bold mb-4">MS Pipes (Mild Steel Pipes)</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          MS Pipes (Mild Steel Pipes)
+        </h2>
 
-        <p className="text-gray-700 leading-relaxed mb-4">
-          MS Pipes (Mild Steel Pipes) are widely used in construction,
-          infrastructure, and industrial applications due to their strength,
-          durability, and cost-effectiveness. These pipes are manufactured using
+        <p className="text-gray-700 leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg text-justify">
+          <span className="font-bold text-black">
+            MS Pipes (Mild Steel Pipes)
+          </span>{" "}
+          are widely used in construction, infrastructure, and industrial
+          applications due to their strength, durability, and
+          cost-effectiveness. These pipes are manufactured using
           high-quality steel, ensuring excellent performance and long service
           life.
         </p>
 
-        <p className="text-gray-700 leading-relaxed mb-4">
-          We offer MS Pipes in various sizes, thicknesses, and grades to meet
-          diverse project requirements. Known for their high load-bearing
-          capacity and weldability, these pipes are suitable for both structural
-          and fluid transportation purposes.
+        <p className="text-gray-700 leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg text-justify">
+          We offer <span className="font-bold text-black">MS Pipes</span> in
+          various sizes, thicknesses, and grades to meet diverse project
+          requirements. Known for their high load-bearing capacity and
+          weldability, these pipes are suitable for both structural and fluid
+          transportation purposes.
         </p>
 
-        <p className="text-gray-700 leading-relaxed">
-          Our MS Pipes provide reliable performance, corrosion resistance (with
-          proper coating), and easy installation, making them a preferred choice
-          for engineers, contractors, and fabricators.
+        <p className="text-gray-700 leading-relaxed text-[15px] sm:text-base md:text-lg text-justify">
+          Our <span className="font-bold text-black">MS Pipes</span> provide
+          reliable performance, corrosion resistance (with proper coating), and
+          easy installation, making them a preferred choice for engineers,
+          contractors, and fabricators.
         </p>
       </section>
 
@@ -33,7 +40,7 @@ export default function MSPipes() {
       <section className="max-w-6xl mx-auto px-4 pb-10">
         <h3 className="text-xl font-bold mb-4">Applications</h3>
 
-        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 text-[15px] sm:text-base">
           <li>Structural frameworks and construction supports</li>
           <li>Water supply and drainage systems</li>
           <li>Industrial pipelines and machinery structures</li>
@@ -48,7 +55,7 @@ export default function MSPipes() {
         <h3 className="font-bold mb-6">MS Pipes</h3>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="group rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300">
+          <div className="group bg-white rounded-xl overflow-hidden border border-transparent hover:border-[#FACC15] shadow-md hover:shadow-xl transition duration-300">
             
             {/* IMAGE */}
             <div className="overflow-hidden">
@@ -67,7 +74,6 @@ export default function MSPipes() {
           </div>
         </div>
       </section>
-    </>
+    </section>
   );
 }
-

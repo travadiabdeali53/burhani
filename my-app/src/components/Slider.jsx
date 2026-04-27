@@ -171,74 +171,78 @@ export default function Slider() {
         </div>
       </div>
       {/* ABOUT TEXT SECTION */}
-      <section className="bg-[#efefef] pt-6 pb-4 md:pt-8 md:pb-6">
-        <div className="max-w-7xl mx-auto px-5 md:px-6 grid md:grid-cols-[1.5fr_1fr] gap-4 items-center">
-          {/* LEFT TEXT */}
-          <div className="text-gray-700 leading-7 text-[14px] md:text-base text-justify">
-            {/* HEADING */}
-            <h2 className="text-lg md:text-2xl font-bold text-[#0B1F3A] mb-3">
-              Welcome to{" "}
-              <span className="text-[#FACC15]">
-                Burhani Steel & Hardware
-              </span>{" "}
-            </h2>
+<section className="bg-[#efefef] pt-5 pb-4 md:pt-8 md:pb-6">
+  <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 grid md:grid-cols-[1.5fr_1fr] gap-5 items-center">
 
-            <p>
-              Established in 1994 in Surendranagar (Gujarat, India),{" "}
-              <span className="font-semibold text-[#0B1F3A]">
-                Burhani Steel & Hardware
-              </span>
-              , also known as{" "}
-              <span className="font-semibold">Gujarat Steel & Hardware</span>,
-              is a trusted name in supplying premium-quality steel and hardware
-              products.
-            </p>
+    {/* LEFT TEXT */}
+    <div className="text-gray-700 text-[13px] sm:text-[14px] md:text-base leading-6 sm:leading-7 md:leading-8 text-left md:text-justify">
 
-            <p className="mt-3">
-              We deal in{" "}
-              <span className="font-semibold">
-                TMT Bars, Pipes, Structural Steel, Plates
-              </span>{" "}
-              and more—known for their{" "}
-              <span className="font-semibold">
-                strength, durability, and reliability
-              </span>
-              . Our product range also includes{" "}
-              <span className="font-semibold">
-                Tata Barbed Wire, Bansal Barbed Wire, Tata Chain Link Jali,
-                Bansal Chain Link Jali, all types of GI Wire, and Knotted Chain
-                Link
-              </span>
-              , catering to diverse fencing and structural applications.
-            </p>
+      {/* HEADING */}
+      <h2 className="text-[28px] sm:text-2xl md:text-3xl font-bold text-[#0B1F3A] mb-4 leading-tight">
+        Welcome to{" "}
+        <span className="text-[#FACC15]">
+          Burhani Steel & Hardware
+        </span>
+      </h2>
 
-            <p className="mt-3">
-              Backed by strong partnerships with industry leaders like{" "}
-              <span className="font-semibold">
-                Tata Steel, JSW Steel Ltd., SAIL, and RINL (Vizag Steel)
-              </span>
-              , along with trusted secondary brands like{" "}
-              <span className="font-semibold">Kamdhenu and Kay 2 Steel</span>,
-              we ensure{" "}
-              <span className="font-semibold">
-                consistent quality, ready stock availability, and dependable
-                supply
-              </span>{" "}
-              across Ahmedabad and beyond.
-            </p>
-          </div>
+      <p>
+        Established in 1994 in Surendranagar (Gujarat, India),
+        <span className="font-semibold text-[#0B1F3A]">
+          {" "}Burhani Steel & Hardware
+        </span>,
+        also known as
+        <span className="font-semibold">
+          {" "}Gujarat Steel & Hardware
+        </span>,
+        is a trusted name in supplying premium-quality steel and hardware products.
+      </p>
 
-          {/* RIGHT IMAGE */}
-          <div className="flex justify-center md:justify-end mt-4 md:mt-0">
-            <img
-              src={welcome2}
-              alt="Steel Products"
-              loading="lazy"
-              className="w-[92%] max-w-[360px] h-[200px] md:h-[250px] object-cover rounded-lg shadow-md mx-auto"
-            />
-          </div>
-        </div>
-      </section>
+      <p className="mt-4">
+        We deal in
+        <span className="font-semibold">
+          {" "}TMT Bars, Pipes, Structural Steel, Plates
+        </span>
+        and more—known for their
+        <span className="font-semibold">
+          {" "}strength, durability, and reliability
+        </span>.
+        Our product range also includes
+        <span className="font-semibold">
+          {" "}Tata Barbed Wire, Bansal Barbed Wire, Tata Chain Link Jali,
+          Bansal Chain Link Jali, all types of GI Wire, and Knotted Chain Link
+        </span>,
+        catering to diverse fencing and structural applications.
+      </p>
+
+      <p className="mt-4">
+        Backed by strong partnerships with industry leaders like
+        <span className="font-semibold">
+          {" "}Tata Steel, JSW Steel Ltd., SAIL, and All Types of Raipur Structural Steel 
+        </span>,
+        along with trusted secondary brands like
+        <span className="font-semibold">
+          {" "}Kamdhenu and Electro Steel
+        </span>,
+        we ensure
+        <span className="font-semibold">
+          {" "}consistent quality, ready stock availability, and dependable supply{" "}
+        </span>
+        across Surendranagar and beyond.
+      </p>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="flex justify-center md:justify-end mt-2 md:mt-0">
+      <img
+        src={welcome2}
+        alt="Steel Products"
+        loading="lazy"
+        className="w-full max-w-[340px] md:max-w-[500px] lg:max-w-[580px] h-[180px] sm:h-[220px] md:h-[280px] lg:h-[320px] object-cover rounded-xl shadow-md"
+      />
+    </div>
+
+  </div>
+</section>
     </section>
   );
 }
