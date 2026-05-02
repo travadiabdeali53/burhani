@@ -64,7 +64,7 @@ const secondaryBrands = [
 
 const checkpoints = [
   "We provide Test Certificates of our products",
-  "We provide F.O.R. Delivery",
+  "We provide F.O.R. Delivery in all over India",
   "We provide Transportation, Weight, Loading, or Unloading",
   "To inquire about any of the Iron and Steel products click View Products",
 ];
@@ -407,7 +407,7 @@ export default function About() {
                 {/* Years badge floating */}
                 <div className="absolute -bottom-4 -right-3 sm:-right-4 bg-[#FACC15] rounded-xl px-4 py-3 shadow-xl border-4 border-white">
                   <p className="text-[#0B1F3A] font-black text-2xl leading-none">
-                    30+
+                    20+
                   </p>
                   <p className="text-[#0B1F3A]/70 text-[10px] font-bold tracking-wider uppercase mt-0.5">
                     Years

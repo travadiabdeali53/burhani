@@ -79,26 +79,25 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 bg-[#FACC15]/10 border border-[#FACC15]/40 rounded-full px-3 py-1 mb-4">
               <div className="w-1.5 h-1.5 bg-[#FACC15] rounded-full animate-pulse" />
               <span className="text-[#0B1F3A] text-[10px] sm:text-xs font-bold tracking-widest uppercase">
-                Trusted Since 1994
+                Trusted Since 2005
               </span>
             </div>
 
             {/* Main heading */}
-            <h1 className="text-[2.6rem] sm:text-5xl lg:text-6xl xl:text-[5rem] font-black text-[#0B1F3A] leading-[1.0] tracking-tight mb-4">
-              HIGH
-              <br />
-              <span className="relative inline-block">
-                QUALITY
-                <span className="absolute -bottom-1 left-0 w-full h-[5px] sm:h-[6px] bg-[#FACC15] rounded" />
-              </span>
-              <br />
-              STEEL
-              <br />
-              SUPPLIER
-            </h1>
-
+            <h1 className="text-[2.6rem] sm:text-5xl lg:text-6xl xl:text-[5rem] font-black text-[#0B1F3A] leading-[1.1] tracking-tight mb-4">
+  HIGH
+  <br />
+  <span className="relative inline-block pb-2">
+    QUALITY
+    <span className="absolute left-0 bottom-0 w-full h-[5px] bg-[#FACC15] rounded" />
+  </span>
+  <br />
+  STEEL
+  <br />
+  SUPPLIER
+</h1>
             {/* Sub brand name */}
-            <h2 className="text-xs sm:text-sm lg:text-base font-bold text-[#FACC15] tracking-[0.18em] uppercase mt-5 mb-3">
+            <h2 className="text-xs sm:text-sm lg:text-base font-bold text-[rgb(0,39,66)] tracking-[0.18em] uppercase mt-5 mb-3">
               Burhani Steel & Hardware <br></br>
               Gujarat Steel & Hardware
             </h2>

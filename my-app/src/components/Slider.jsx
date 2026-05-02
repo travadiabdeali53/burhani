@@ -181,7 +181,7 @@ export default function Slider() {
             </h2>
 
             <p>
-              Established in 1994 in Surendranagar (Gujarat, India),
+              Established in 2005 in Surendranagar (Gujarat, India),
               <span className="font-semibold text-[#0B1F3A]">
                 {" "}
                 Burhani Steel & Hardware

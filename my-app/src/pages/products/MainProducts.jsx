@@ -13,7 +13,6 @@ import hr_plates from "../../assets/products/hr_plates.webp";
 import sheets from "../../assets/products/sheets.webp";
 import beams from "../../assets/products/beams.webp";
 import chequered from "../../assets/products/chequered.webp";
-import billet from "../../assets/products/billet.webp";
 
 export default function MainProducts() {
   const mainProducts = [
@@ -34,7 +33,6 @@ export default function MainProducts() {
     { title: "H. R. Sheets", img: sheets, slug: "hrsheets" },
     { title: "Channel & Beams", img: beams, slug: "channelsbeams" },
     { title: "Chequered Plates", img: chequered, slug: "chequeredplates" },
-    { title: "Billet", img: billet, slug: "billet" },
   ];
 
   return (

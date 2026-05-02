@@ -18,7 +18,6 @@ import AlloySteel from "./products/AlloySteel";
 import HRPlates from "./products/HRPlates";
 import HRSheets from "./products/HRSheets";
 import ChequeredPlate from "./products/ChequeredPlate";
-import Billet from "./products/Billet";
 import Channel from "./products/Channel";
 
 // ✅ IMPORT IMAGES (IMPORTANT)
@@ -304,7 +303,6 @@ export default function ProductPage() {
     hrplates: ["HR", "Plates"],
     hrsheets: ["HR", "Sheets"],
     chequeredplates: ["Chequered", "Plates"],
-    billet: ["Billet"],
     fencing: ["Fencing", "Materials"],
     chemicals: ["Chemicals &", "Solutions"],
     channelsbeams: ["Channel &", "Beams"],
@@ -425,8 +423,6 @@ export default function ProductPage() {
         <HRSheets />
       ) : current === "chequeredplates" ? (
         <ChequeredPlate />
-      ) : current === "billet" ? (
-        <Billet />
       ) : current === "fencing" ? (
         <Fencing />
       ) : current === "chemicals" ? (

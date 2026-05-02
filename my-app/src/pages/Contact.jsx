@@ -153,14 +153,14 @@ export default function Contact() {
 
                       <a
                         href="tel:+919429647672"
-                        className="block text-[#0B1F3A] font-black text-lg sm:text-xl hover:text-[#FACC15] transition-colors"
+                        className="block text-lg sm:text-xl font-semibold text-[#0B1F3A] hover:text-[#FACC15] transition-colors"
                       >
                         +91 9429647672
                       </a>
 
                       <a
                         href="tel:+919033772756"
-                        className="block text-gray-600 text-base mt-1 hover:text-[#FACC15] transition-colors"
+                        className="block text-lg sm:text-xl font-semibold text-[#0B1F3A] mt-1 hover:text-[#FACC15] transition-colors"
                       >
                         +91 9033772756
                       </a>
