@@ -105,21 +105,21 @@ export default function Footer() {
                 </svg>
               </span>
 
-              <div className="flex items-start gap-3 flex-wrap">
-                <a
-  href="tel:+919429647672"
-  className="text-lg font-semibold text-[#FACC15] border-b border-[#FACC15] pb-1 hover:text-white hover:border-white transition-all duration-300 leading-tight inline-block"
->
-  +91 9429647672
-</a>
+              <div className="flex flex-col gap-1 mt-2">
+  <a
+    href="tel:+919429647672"
+    className="text-lg font-semibold text-[#FACC15] border-b border-[#FACC15] pb-1 mb-2 hover:text-white hover:border-white transition-all duration-300 leading-tight w-fit"
+  >
+    +91 9429647672
+  </a>
 
-<a
-  href="tel:+919033772756"
-  className="text-lg font-semibold text-white/70 hover:text-[#FACC15] transition-colors duration-300 leading-tight pt-2 block"
->
-  +91 9033772756
-</a>
-              </div>
+  <a
+    href="tel:+919033772756"
+    className="text-lg font-semibold text-white/70 hover:text-[#FACC15] transition-colors duration-300 leading-tight"
+  >
+    +91 9033772756
+  </a>
+</div>
             </li>
             <li className="flex gap-3 items-center">
               <span className="text-[#FACC15] shrink-0">
