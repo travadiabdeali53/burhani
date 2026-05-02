@@ -149,10 +149,14 @@ export default function Navbar() {
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8 lg:gap-10">
           {NAV_LINKS.map((link) => {
+            const isProducts =
+              link.to === "/products" &&
+              location.pathname.startsWith("/products");
+
             const active =
               (link.type === "hash" && activeSection === "contact") ||
               (link.type === "route" &&
-                location.pathname === link.to &&
+                (location.pathname === link.to || isProducts) &&
                 activeSection !== "contact");
             return (
               <li key={link.label}>
@@ -243,10 +247,14 @@ export default function Navbar() {
           `}
         >
           {NAV_LINKS.map((link) => {
+            const isProducts =
+              link.to === "/products" &&
+              location.pathname.startsWith("/products");
+
             const active =
               (link.type === "hash" && activeSection === "contact") ||
               (link.type === "route" &&
-                location.pathname === link.to &&
+                (location.pathname === link.to || isProducts) &&
                 activeSection !== "contact");
             return (
               <button

@@ -22,10 +22,10 @@ import Billet from "./products/Billet";
 import Channel from "./products/Channel";
 
 // ✅ IMPORT IMAGES (IMPORTANT)
-import tmt from "../assets/products/tmt.webp";
+import tmt from "../assets/products/tmt4.webp";
 import wire from "../assets/products/wire.webp";
+import round2 from "../assets/products/round2.webp";
 import angle from "../assets/products/angle.webp";
-import round from "../assets/products/round.webp";
 import structural_steel from "../assets/products/structural_steel.webp";
 import hr_plates from "../assets/products/hr_plates.webp";
 import alloy from "../assets/products/alloy.webp";
@@ -35,31 +35,70 @@ const BASE = import.meta.env.BASE_URL;
 
 // ─── BRAND CATALOGUE ─────────────────
 const catalogue = {
-  vizag: {
-    name: "VIZAG Steel",
+  tata: {
+    name: "TATA Steel",
     tagline: "Distributor in Surendranagar",
     description: [
-      "VIZAG steel which is also known as Rashtriya Ispat Nigam Ltd (RINL) is a popular steel producer based in Vishakhapatnam. We at  are the Burhani Steel & Hardware dealers and suppliers of Vizag steel products.",
+      "TATA Steel is one of India's most trusted and leading steel manufacturers, known for its high-quality and innovative steel products. We at Burhani Steel & Hardware are dealers and suppliers of Tata Steel products.",
 
-      "The TMT bars by Vizag steel have better bonding with cement and offer higher elongation, ultimate tensile strength, and fatigue strength. We supply VSP steel TMT bars (RINL), which serve as the framework for high-rise buildings.",
+      "The TMT bars by TATA Steel provide excellent bonding with cement and offer superior elongation, high tensile strength, and durability. We supply Tata TMT bars, which are ideal for use in high-rise buildings and modern construction.",
 
-      "Our homes become safe and secure due to the high strength and flexibility of these reinforcement steel bars.",
+      "Our structures become safe and long-lasting due to the strength, flexibility, and reliability of these reinforcement steel bars.",
 
-      "We at Burhani Steel & Hardware are authorized dealers and suppliers of Vizag steel products.",
+      "We at Burhani Steel & Hardware are trusted dealers and suppliers of Tata Steel products.",
     ],
     products: [
-      { title: "TMT Bars", img: tmt, pdf: "https://drive.google.com/file/d/1NGKOj-g-bxG9cNZ0MUfmy7Rcpzzh-kvA/view?usp=sharing" },
-      { title: "Wire Rod", img: wire, pdf: "https://drive.google.com/file/d/195Q-65RfVZb1OhU7yVf1EKNlvYYwJsoB/view?usp=sharing" },
       {
-        title: "Structural Steel (Angles)",
-        img: angle,
-        pdf: "https://drive.google.com/file/d/11E9OLIXbsk46Dgki5iWJoBqUqNDLFDrq/view?usp=sharing",
-      },
+      title: "TMT Bars",
+      img: tmt,
+    },
+    {
+      title: "Steel Rod",
+      img: wire,
+    },
+
+    ],
+  },
+  electrosteel: {
+    name: "Electro Steel",
+    tagline: "Distributor in Surendranagar",
+    description: [
+      "Electro Steel is a reputed name in the Indian steel industry, known for delivering consistent quality and advanced manufacturing standards. At Burhani Steel & Hardware, we proudly supply Electro Steel products that meet modern construction needs.",
+
+      "Electro Steel TMT bars are manufactured using advanced thermo-mechanical treatment, ensuring superior strength, ductility, and corrosion resistance. These bars provide excellent bonding with cement, making them ideal for RCC structures and long-lasting construction.",
+
+      "Designed for safety and performance, Electro Steel TMT bars offer high tensile strength, better elongation, and earthquake-resistant properties—making them a reliable choice for residential, commercial, and infrastructure projects.",
+
+      "At Burhani Steel & Hardware, we ensure timely supply, genuine products, and competitive pricing, making us a trusted partner for builders, contractors, and engineers choosing Electro Steel.",
+    ],
+    products: [
       {
-        title: "Steel Round Bars",
-        img: round,
-        pdf: "https://drive.google.com/file/d/1QALeNvKrn0Gr0oUi5qQsqdN7mBfG8max/view?usp=sharing",
-      },
+      title: "Steel Rod",
+      img: wire,
+    }
+    ],
+  },
+  jindal: {
+    name: "Jindal Steel",
+    tagline: "Distributor in Surendranagar",
+    description: [
+      "Jindal Steel is a leading force in the Indian steel industry, known for its innovation, quality, and strong manufacturing capabilities. At Burhani Steel & Hardware, we supply genuine Jindal Steel products trusted by engineers and builders across projects.",
+
+      "Jindal TMT bars are produced using advanced technology, ensuring high strength, excellent ductility, and superior bonding with cement. These bars are designed to perform exceptionally well in RCC structures and demanding construction environments.",
+
+      "With features like high tensile strength, better elongation, and earthquake-resistant properties, Jindal TMT bars provide enhanced safety and durability for residential, commercial, and infrastructure developments.",
+
+      "At Burhani Steel & Hardware, we are committed to delivering authentic Jindal Steel products with reliable service, competitive pricing, and timely availability for all your construction needs.",
+    ],
+    products: [
+      {
+      title: "TMT Bars",
+      img: tmt,
+    },
+      {
+      title: "Round Bars",
+      img: round2,
+    }
     ],
   },
 
@@ -88,9 +127,21 @@ const catalogue = {
     description:
       "JSW Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. JSW products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
-      { title: "TMT Bars", img: tmt, pdf: "https://drive.google.com/file/d/1E1C2U-7k-8BDRBhq7E0QYiTmIcuGKXs5/view?usp=sharing" },
-      { title: "Wire Rod", img: wire, pdf: "https://drive.google.com/file/d/1GTcLrIJ2Yr8xFYmbez72iHQWvuanSbsK/view?usp=sharing" },
-      { title: "Alloy Steel", img: alloy, pdf: "https://drive.google.com/file/d/1E1C2U-7k-8BDRBhq7E0QYiTmIcuGKXs5/view?usp=sharing" },
+      {
+        title: "TMT Bars",
+        img: tmt,
+        pdf: "https://drive.google.com/file/d/1E1C2U-7k-8BDRBhq7E0QYiTmIcuGKXs5/view?usp=sharing",
+      },
+      {
+        title: "Wire Rod",
+        img: wire,
+        pdf: "https://drive.google.com/file/d/1GTcLrIJ2Yr8xFYmbez72iHQWvuanSbsK/view?usp=sharing",
+      },
+      {
+        title: "Alloy Steel",
+        img: alloy,
+        pdf: "https://drive.google.com/file/d/1E1C2U-7k-8BDRBhq7E0QYiTmIcuGKXs5/view?usp=sharing",
+      },
     ],
   },
 
@@ -100,17 +151,11 @@ const catalogue = {
     description:
       "Kamdhenu Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. Kamdhenu products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
-      { title: "TMT Bars", img: tmt, pdf: "https://drive.google.com/file/d/15y_t_2W6Q5K1YVn3kbx93QDwT8E6I6AX/view?usp=sharing" },
-    ],
-  },
-
-  key2: {
-    name: "Key 2 Steel",
-    tagline: "Distributor in Surendranagar",
-    description:
-      "Key 2 Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. Key 2 products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
-    products: [
-      { title: "TMT Bars", img: tmt, pdf: "https://drive.google.com/file/d/1bAomI2507LkjGFPy_0UzrsrVjLFe-oov/view?usp=sharing" },
+      {
+        title: "TMT Bars",
+        img: tmt,
+        pdf: "https://drive.google.com/file/d/15y_t_2W6Q5K1YVn3kbx93QDwT8E6I6AX/view?usp=sharing",
+      },
     ],
   },
 
@@ -119,12 +164,20 @@ const catalogue = {
     tagline: "Distributor in Surendranagar",
     description:
       "ET TMT Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. ET TMT products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
-    products: [{ title: "TMT Bars", img: tmt, pdf: "https://drive.google.com/file/d/13wRJRMdpVsIV47GrKRTNjgsyLZt4PBup/view?usp=drive_link" }],
+    products: [
+      {
+        title: "TMT Bars",
+        img: tmt,
+        pdf: "https://drive.google.com/file/d/13wRJRMdpVsIV47GrKRTNjgsyLZt4PBup/view?usp=drive_link",
+      },
+    ],
   },
 };
 
 // ─── PRODUCT CARD ─────────────────
 function ProductCard({ title, img, pdf, index }) {
+  const hasPdf = !!pdf;
+
   return (
     <Animate
       variant="fadeUp"
@@ -132,79 +185,58 @@ function ProductCard({ title, img, pdf, index }) {
       duration="duration-600"
     >
       <div className="group flex flex-col w-full max-w-[300px] sm:max-w-full mx-auto rounded-xl overflow-hidden border border-gray-100 hover:border-[#FACC15] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-        {/* Image — click to preview PDF */}
-        <a
-          href={pdf}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative block w-full"
-        >
-          <div className="relative overflow-hidden h-40 sm:h-44 h-40 sm:h-44 md:h-48 bg-gray-100">
-            <img
-              src={img}
-              alt={title}
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-[#0B1F3A]/50 flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                />
-              </svg>
-              <span className="text-white text-xs font-semibold tracking-wide">
-                View Brochure
-              </span>
-            </div>
+        
+        {/* Image */}
+        {hasPdf ? (
+          <a href={pdf} target="_blank" rel="noopener noreferrer">
+            <CardImage img={img} title={title} showOverlay />
+          </a>
+        ) : (
+          <div>
+            <CardImage img={img} title={title} />
           </div>
-        </a>
+        )}
 
         {/* Footer */}
         <div className="p-4 bg-white flex items-center justify-between gap-3">
           <h3 className="font-semibold text-[#0B1F3A] text-sm leading-tight">
             {title}
           </h3>
-          <a
-            href={pdf}
-            download
-            className="shrink-0 flex items-center gap-1.5 bg-[#FACC15] hover:bg-[#0B1F3A] text-[#0B1F3A] hover:text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] tracking-wide transition-all duration-200"
-          >
-            Download
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2.5}
-              viewBox="0 0 24 24"
+
+          {hasPdf && (
+            <a
+              href={pdf}
+              download
+              className="shrink-0 flex items-center gap-1.5 bg-[#FACC15] hover:bg-[#0B1F3A] text-[#0B1F3A] hover:text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] tracking-wide transition-all duration-200"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-          </a>
+              Download
+            </a>
+          )}
         </div>
 
-        {/* Yellow underline accent */}
         <div className="h-0.5 w-0 group-hover:w-full bg-[#FACC15] transition-all duration-500" />
       </div>
     </Animate>
+  );
+}
+
+function CardImage({ img, title, showOverlay = false }) {
+  return (
+    <div className="relative overflow-hidden h-40 sm:h-44 md:h-48 bg-gray-100">
+      <img
+        src={img}
+        alt={title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+
+      {showOverlay && (
+        <div className="absolute inset-0 bg-[#0B1F3A]/50 flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span className="text-white text-xs font-semibold tracking-wide">
+            View Brochure
+          </span>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -213,44 +245,38 @@ export default function ProductPage() {
   const { brand } = useParams();
 
   const location = useLocation();
-const navigationType = useNavigationType();
+  const navigationType = useNavigationType();
 
-useEffect(() => {
-  const mainProductsScroll = sessionStorage.getItem(
-    "productsScrollPosition"
-  );
+  useEffect(() => {
+    const mainProductsScroll = sessionStorage.getItem("productsScrollPosition");
 
-  const homeScroll = sessionStorage.getItem(
-    "homeScrollPosition"
-  );
+    const homeScroll = sessionStorage.getItem("homeScrollPosition");
 
-  const savedPosition =
-    mainProductsScroll || homeScroll;
+    const savedPosition = mainProductsScroll || homeScroll;
 
-  // Restore ONLY when browser back/forward is used
-  if (
-    navigationType === "POP" &&
-    location.pathname === "/products" &&
-    savedPosition
-  ) {
+    // Restore ONLY when browser back/forward is used
+    if (
+      navigationType === "POP" &&
+      location.pathname === "/products" &&
+      savedPosition
+    ) {
+      window.scrollTo({
+        top: Number(savedPosition),
+        behavior: "auto",
+      });
+
+      sessionStorage.removeItem("productsScrollPosition");
+      sessionStorage.removeItem("homeScrollPosition");
+      return;
+    }
+
+    // Normal page open → always start from top
     window.scrollTo({
-      top: Number(savedPosition),
+      top: 0,
+      left: 0,
       behavior: "auto",
     });
-
-    sessionStorage.removeItem("productsScrollPosition");
-    sessionStorage.removeItem("homeScrollPosition");
-    return;
-  }
-
-  // Normal page open → always start from top
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "auto",
-  });
-
-}, [location.pathname, navigationType]);
+  }, [location.pathname, navigationType]);
   const [searchParams] = useSearchParams();
 
   const queryBrand = searchParams.get("brand");
@@ -284,8 +310,6 @@ useEffect(() => {
     channelsbeams: ["Channel &", "Beams"],
     // 👉 add your 14 products here once
   };
-
-
 
   return (
     <div className="bg-white font-['Poppins']">

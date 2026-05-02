@@ -6,10 +6,10 @@ import Footer from "../components/Footer";
 import aboutImg from "../assets/about.webp";
 import sail from "../assets/brands/sail.webp";
 import jsw from "../assets/brands/jsw.webp";
-import vizag from "../assets/brands/vizag.webp";
+import tata from "../assets/brands/tata.webp";
+import jindal from "../assets/brands/jindal.webp";
 import electrosteel from "../assets/brands/electro-steel.webp";
 import kamdhenu from "../assets/brands/kamdhenu-steel.webp";
-import key2 from "../assets/brands/key-2-steel.webp";
 import ettmt from "../assets/brands/et-tmt.webp";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -28,16 +28,22 @@ const primaryBrands = [
     logo: jsw,
   },
   {
-    name: "VIZAG Steel",
-    full: "Rashtriya Ispat Nigam Limited",
-    link: "/products?brand=vizag",
-    logo: vizag,
+    name: "TATA Steel",
+    full: "We Also Make Tomorrow",
+    link: "/products/tata",
+    logo: tata,
   },
   {
     name: "Electro Steel",
     full: "Electro Steel India Ltd.",
     link: "/products/electrosteel",
     logo: electrosteel,
+  },
+  {
+    name: "Jindal Steel",
+    full: "Jindal Steel and Power Ltd.",
+    link: "/products/jindal",
+    logo: jindal,
   },
 ];
 
@@ -47,12 +53,6 @@ const secondaryBrands = [
     full: "Kamdhenu Steel & Alloys",
     link: "/products/kamdhenu",
     logo: kamdhenu,
-  },
-  {
-    name: "Kay2 TMT Bars",
-    full: "Kay2 TMT Bars",
-    link: "/products/key2",
-    logo: key2,
   },
   {
     name: "ET TMT",
