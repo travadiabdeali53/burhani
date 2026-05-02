@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ProductPage from "./pages/ProductPage";
 import Contact from "./pages/Contact";
+import GetEnquire from "./pages/GetEnquire";
 
 // ── Scroll to top on every route change ──────────────────────────────────────
 function ScrollToTop() {
@@ -43,6 +44,7 @@ function Layout() {
           <Route path="/products" element={<ProductPage />} />
           <Route path="/products/:brand" element={<ProductPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/get-enquire" element={<GetEnquire />} />
         </Routes>
       </div>
     </>

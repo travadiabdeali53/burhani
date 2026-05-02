@@ -205,10 +205,10 @@ export default function Navbar() {
           {/* CTA button */}
           <li>
             <button
-              onClick={() => handleLinkClick({ type: "route", to: "/contact" })}
+              onClick={() => handleLinkClick({ type: "route", to: "/get-enquire" })}
               className="bg-[#0B1F3A] text-white px-5 py-2.5 rounded text-sm font-bold tracking-wide hover:bg-[#FACC15] hover:text-[#0B1F3A] transition-all duration-300"
             >
-              Get Quote
+              Get Enquiry
             </button>
           </li>
         </ul>
@@ -277,10 +277,10 @@ export default function Navbar() {
 
           {/* Mobile CTA */}
           <button
-            onClick={() => handleLinkClick({ type: "hash", to: "#contact" })}
+            onClick={() => handleLinkClick({ type: "route", to: "/get-enquire" })}
             className="mt-4 bg-[#FACC15] text-[#0B1F3A] text-center px-5 py-3 rounded font-black text-sm tracking-widest uppercase hover:bg-yellow-300 transition-all duration-300 w-full"
           >
-            Get Quote
+            Get Enquiry
           </button>
         </div>
       )}
