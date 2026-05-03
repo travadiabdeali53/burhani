@@ -22,6 +22,7 @@ import Channel from "./products/Channel";
 
 // ✅ IMPORT IMAGES (IMPORTANT)
 import tmt from "../assets/products/tmt4.webp";
+import tmt6 from "../assets/products/tmt6.webp";
 import wire from "../assets/products/wire.webp";
 import round2 from "../assets/products/round2.webp";
 import angle from "../assets/products/angle.webp";
@@ -58,25 +59,7 @@ const catalogue = {
 
     ],
   },
-  electrosteel: {
-    name: "Electro Steel",
-    tagline: "Distributor in Surendranagar",
-    description: [
-      "Electro Steel is a reputed name in the Indian steel industry, known for delivering consistent quality and advanced manufacturing standards. At Burhani Steel & Hardware, we proudly supply Electro Steel products that meet modern construction needs.",
 
-      "Electro Steel TMT bars are manufactured using advanced thermo-mechanical treatment, ensuring superior strength, ductility, and corrosion resistance. These bars provide excellent bonding with cement, making them ideal for RCC structures and long-lasting construction.",
-
-      "Designed for safety and performance, Electro Steel TMT bars offer high tensile strength, better elongation, and earthquake-resistant properties—making them a reliable choice for residential, commercial, and infrastructure projects.",
-
-      "At Burhani Steel & Hardware, we ensure timely supply, genuine products, and competitive pricing, making us a trusted partner for builders, contractors, and engineers choosing Electro Steel.",
-    ],
-    products: [
-      {
-      title: "Steel Rod",
-      img: wire,
-    }
-    ],
-  },
   jindal: {
     name: "Jindal Steel",
     tagline: "Distributor in Surendranagar",
@@ -159,13 +142,18 @@ const catalogue = {
   },
 
   ettmt: {
-    name: "ET TMT Steel",
+    name: "Electrotherm TMT Steel",
     tagline: "Distributor in Surendranagar",
     description:
-      "ET TMT Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. ET TMT products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
+      "Electrotherm TMT Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. ET TMT products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
       {
-        title: "TMT Bars",
+        title: "Epoxy Coated TMT Bars",
+        img: tmt6,
+        pdf: "https://drive.google.com/file/d/13wRJRMdpVsIV47GrKRTNjgsyLZt4PBup/view?usp=drive_link",
+      },
+      {
+        title: "Iron TMT Bars",
         img: tmt,
         pdf: "https://drive.google.com/file/d/13wRJRMdpVsIV47GrKRTNjgsyLZt4PBup/view?usp=drive_link",
       },

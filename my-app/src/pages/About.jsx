@@ -8,7 +8,6 @@ import sail from "../assets/brands/sail.webp";
 import jsw from "../assets/brands/jsw.webp";
 import tata from "../assets/brands/tata.webp";
 import jindal from "../assets/brands/jindal.webp";
-import electrosteel from "../assets/brands/electro-steel.webp";
 import kamdhenu from "../assets/brands/kamdhenu-steel.webp";
 import ettmt from "../assets/brands/et-tmt.webp";
 
@@ -34,12 +33,6 @@ const primaryBrands = [
     logo: tata,
   },
   {
-    name: "Electro Steel",
-    full: "Electro Steel India Ltd.",
-    link: "/products/electrosteel",
-    logo: electrosteel,
-  },
-  {
     name: "Jindal Steel",
     full: "Jindal Steel and Power Ltd.",
     link: "/products/jindal",
@@ -56,7 +49,7 @@ const secondaryBrands = [
   },
   {
     name: "ET TMT",
-    full: "ET-TMT Steel",
+    full: "Electrotherm TMT Steel",
     link: "/products/ettmt",
     logo: ettmt,
   },

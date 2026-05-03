@@ -1,6 +1,6 @@
 import tmt from "@/assets/products/tmt.webp";
 import tmt2 from "@/assets/products/tmt2.webp";
-import tmt3 from "@/assets/products/tmt3.webp";
+import tmt6 from "@/assets/products/tmt6.webp";
 import tmt4 from "@/assets/products/tmt4.webp";
 import tmt5 from "@/assets/products/tmt5.webp";
 
@@ -38,13 +38,13 @@ export default function TMTBars() {
       "Corrosion Resistant Steel (CRS)",
     ],
     primary: [
-      { title: "VSP Rebars", img: tmt2 },
+      { title: "TATA Tiscon Ltd.", img: tmt2 },
       { title: "JSW Rebars", img: tmt },
     ],
     secondary: [
+      { title: "Electrotherm Epoxy Coated TMT Bars", img: tmt6 },
       { title: "Kamdhenu Steel", img: tmt4 },
-      { title: "Key 2 Steel", img: tmt5 },
-      { title: "ET TMT Steel", img: tmt3 },
+      { title: "Sail TMT Ltd.", img: tmt5 },
     ],
   };
 
