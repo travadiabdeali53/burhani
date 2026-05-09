@@ -27,8 +27,8 @@ const primaryBrands = [
     logo: jsw,
   },
   {
-    name: "TATA Steel",
-    full: "We Also Make Tomorrow",
+    name: "TATA Tiscon",
+    full: "Joy Of Buiding",
     link: "/products/tata",
     logo: tata,
   },
@@ -539,7 +539,7 @@ export default function About() {
           <Animate variant="fadeDown" duration="duration-700">
             <div className="text-center mb-3">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0B1F3A]">
-                We Are Distributors of Secondary Steel Producers
+                We Partner with Trusted Secondary Steel Brands
               </h2>
             </div>
           </Animate>

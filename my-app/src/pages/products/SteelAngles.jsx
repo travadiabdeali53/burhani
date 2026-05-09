@@ -1,4 +1,4 @@
-import angle from "@/assets/products/angle2.webp";
+import angle from "@/assets/steel2.webp";
 
 export default function SteelAngles() {
   return (

@@ -1,5 +1,5 @@
 import alloy1 from "@/assets/products/alloy.webp";
-import alloy2 from "@/assets/products/pipes2.webp";
+import alloy2 from "@/assets/pipes.webp";
 
 export default function AlloySteel() {
   return (

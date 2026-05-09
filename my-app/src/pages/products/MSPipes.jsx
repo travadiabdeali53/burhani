@@ -1,4 +1,4 @@
-import pipes from "@/assets/products/pipes2.webp";
+import pipes from "@/assets/pipes.webp";
 
 export default function MSPipes() {
   return (

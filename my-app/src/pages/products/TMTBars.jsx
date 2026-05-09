@@ -1,5 +1,5 @@
 import tmt from "@/assets/products/tmt.webp";
-import tmt2 from "@/assets/products/tmt2.webp";
+import tmt2 from "@/assets/steel1.webp";
 import tmt6 from "@/assets/products/tmt6.webp";
 import tmt4 from "@/assets/products/tmt4.webp";
 import tmt5 from "@/assets/products/tmt5.webp";

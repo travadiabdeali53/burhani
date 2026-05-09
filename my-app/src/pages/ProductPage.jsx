@@ -25,7 +25,7 @@ import tmt from "../assets/products/tmt4.webp";
 import tmt6 from "../assets/products/tmt6.webp";
 import wire from "../assets/products/wire.webp";
 import round2 from "../assets/products/round2.webp";
-import angle from "../assets/products/angle.webp";
+import angle from "../assets/angles.webp";
 import structural_steel from "../assets/products/structural_steel.webp";
 import hr_plates from "../assets/products/hr_plates.webp";
 import alloy from "../assets/products/alloy.webp";
@@ -37,7 +37,7 @@ const BASE = import.meta.env.BASE_URL;
 const catalogue = {
   tata: {
     name: "TATA Steel",
-    tagline: "Distributor in Surendranagar",
+    tagline: "Trusted Supplier in Surendranagar",
     description: [
       "TATA Steel is one of India's most trusted and leading steel manufacturers, known for its high-quality and innovative steel products. We at Burhani Steel & Hardware are dealers and suppliers of Tata Steel products.",
 
@@ -61,8 +61,8 @@ const catalogue = {
   },
 
   jindal: {
-    name: "Jindal Steel",
-    tagline: "Distributor in Surendranagar",
+    name: "Jindal Stee",
+    tagline: "Trusted Supplier in Surendranagar",
     description: [
       "Jindal Steel is a leading force in the Indian steel industry, known for its innovation, quality, and strong manufacturing capabilities. At Burhani Steel & Hardware, we supply genuine Jindal Steel products trusted by engineers and builders across projects.",
 
@@ -86,7 +86,7 @@ const catalogue = {
 
   sail: {
     name: "SAIL Steel",
-    tagline: "Distributor in Surendranagar",
+    tagline: "Trusted Supplier in Surendranagar",
     description:
       "Steel Authority of India Ltd. (SAIL) is one of the largest steel-making companies in India and a Maharatna PSU. SAIL produces a broad range of steel including hot and cold rolled coils and sheets, galvanised sheets, electrical sheets, structurals, railway products, plates, bars and rods, stainless steel and other alloy steels.",
     products: [
@@ -105,7 +105,7 @@ const catalogue = {
 
   jsw: {
     name: "JSW Steel",
-    tagline: "Distributor in Surendranagar",
+    tagline: "Trusted Supplier in Surendranagar",
     description:
       "JSW Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. JSW products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
@@ -129,7 +129,7 @@ const catalogue = {
 
   kamdhenu: {
     name: "Kamdhenu Steel",
-    tagline: "Distributor in Surendranagar",
+    tagline: "Trusted Supplier in Surendranagar",
     description:
       "Kamdhenu Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. Kamdhenu products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
@@ -143,7 +143,7 @@ const catalogue = {
 
   ettmt: {
     name: "Electrotherm TMT Steel",
-    tagline: "Distributor in Surendranagar",
+    tagline: "Trusted Supplier in Surendranagar",
     description:
       "Electrotherm TMT Steel is one of India's leading integrated steel manufacturers with a capacity of 27 MTPA. ET TMT products are trusted across residential, commercial and infrastructure segments for their consistent quality, superior strength and modern manufacturing processes.",
     products: [
@@ -430,7 +430,7 @@ export default function ProductPage() {
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#0B1F3A]">
-              {brandData.name} Steel Products
+              {brandData.name} Products
             </h2>
 
             <div className="space-y-4 text-gray-600 leading-relaxed">

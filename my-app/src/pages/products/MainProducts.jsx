@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-import tmt2 from "../../assets/products/tmt2.webp";
+import tmt2 from "../../assets/steel1.webp";
 import fencing from "../../assets/products/fencing.webp";
 import chemicals from "../../assets/products/chemicals.webp";
 import wire from "../../assets/products/wire.webp";
 import structural_steel2 from "../../assets/products/structural_steel2.webp";
 import round from "../../assets/products/round.webp";
 import alloy from "../../assets/products/alloy.webp";
-import angle from "../../assets/products/angle.webp";
-import pipes from "../../assets/products/pipes.webp";
+import angle from "../../assets/angles.webp";
+import pipes from "../../assets/steel3.webp";
 import hr_plates from "../../assets/products/hr_plates.webp";
 import sheets from "../../assets/products/sheets.webp";
 import beams from "../../assets/products/beams.webp";
