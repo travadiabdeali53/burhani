@@ -38,13 +38,13 @@ export default function TMTBars() {
       "Corrosion Resistant Steel (CRS)",
     ],
     primary: [
-      { title: "TATA Tiscon Ltd.", img: tmt2 },
+      { title: "TATA Tiscon", img: tmt2 },
       { title: "JSW Rebars", img: tmt },
     ],
     secondary: [
       { title: "Electrotherm Epoxy Coated TMT Bars", img: tmt6 },
       { title: "Kamdhenu Steel", img: tmt4 },
-      { title: "Sail TMT Ltd.", img: tmt5 },
+      { title: "Sail TMT", img: tmt5 },
     ],
   };
 

@@ -36,7 +36,7 @@ const BASE = import.meta.env.BASE_URL;
 // ─── BRAND CATALOGUE ─────────────────
 const catalogue = {
   tata: {
-    name: "TATA Steel",
+    name: "TATA Tiscon Steel",
     tagline: "Trusted Supplier in Surendranagar",
     description: [
       "TATA Steel is one of India's most trusted and leading steel manufacturers, known for its high-quality and innovative steel products. We at Burhani Steel & Hardware are dealers and suppliers of Tata Steel products.",
