@@ -54,7 +54,7 @@ function Layout() {
 // ── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   return (
-    <BrowserRouter basename="/burhani/">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <Layout />
     </BrowserRouter>
