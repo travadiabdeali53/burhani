@@ -195,7 +195,7 @@ export default function Contact() {
                         href="mailto:info@burhanisteels.com"
                         className="text-gray-600 hover:text-[#FACC15] transition-colors text-sm sm:text-base"
                       >
-                        info@burhanisteels.com
+                        burhanisteel7253@gamil.com
                       </a>
                     </div>
                   </div>
