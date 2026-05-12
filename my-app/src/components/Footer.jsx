@@ -136,7 +136,7 @@ export default function Footer() {
                 href="mailto:info@burhanisteels.com"
                 className="text-white/60 hover:text-[#FACC15] text-sm transition-colors"
               >
-                info@burhanisteels.com
+                burhanisteel7253@gmail.com
               </a>
             </li>
             <li className="flex gap-3 items-center">
