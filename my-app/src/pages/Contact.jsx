@@ -192,10 +192,10 @@ export default function Contact() {
                       </h3>
 
                       <a
-                        href="mailto:info@burhanisteels.com"
+                        href="mailto:burhanisteel7253@gmail.com"
                         className="text-gray-600 hover:text-[#FACC15] transition-colors text-sm sm:text-base"
                       >
-                        burhanisteel7253@gamil.com
+                        burhanisteel7253@gmail.com
                       </a>
                     </div>
                   </div>

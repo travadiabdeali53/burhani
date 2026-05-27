@@ -133,7 +133,7 @@ export default function Footer() {
                 </svg>
               </span>
               <a
-                href="mailto:info@burhanisteels.com"
+                href="mailto:burhanisteel7253@gmail.com"
                 className="text-white/60 hover:text-[#FACC15] text-sm transition-colors"
               >
                 burhanisteel7253@gmail.com
